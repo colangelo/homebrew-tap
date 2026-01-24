@@ -7,20 +7,20 @@ class Hp < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/HittyPing/releases/download/v#{version}/hp-darwin-arm64"
-      sha256 "fe8eef741b21f91b8f37b2ca93cd9576eb2681c7f1de0a5e2d7f86928e54515e"
+      sha256 "af1a83b328a3a088218636609835f84633418be67d4413487bf0c4ad2af3fd1b"
     else
       url "https://github.com/colangelo/HittyPing/releases/download/v#{version}/hp-darwin-amd64"
-      sha256 "d4af92df82a79a68a2205821626cbede01d945a78e064609f2f48feaa98c2b7c"
+      sha256 "b812456c86d27c901cd0f07eb0ba775ecfece101a106cb3d69ef3d1a2a010ed0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/HittyPing/releases/download/v#{version}/hp-linux-arm64"
-      sha256 "d72373193e2e1ed39d8165e4e642ae07a47d08bd0f937d6487fc59ff938b4038"
+      sha256 "a6ca2335bf3b8783130c879fc5956b62a240d8697c14b7b1d9a2022315b75806"
     else
       url "https://github.com/colangelo/HittyPing/releases/download/v#{version}/hp-linux-amd64"
-      sha256 "679cfb01a4fc205da80b5ba2b5c2677ef4f7f0bc2d6167f960c172b2b12c8100"
+      sha256 "eb655dd4b76a378f38dfc1c0cefb622e72e6dce2c7461bf3848200bccb9ceaa4"
     end
   end
 
