@@ -2,15 +2,15 @@ class HpBeta < Formula
   desc "Prettyping-style HTTP(S) latency monitor (beta channel)"
   homepage "https://github.com/colangelo/HittyPing"
   license "MIT"
-  version "0.8.4-beta.20260223212833"
+  version "0.8.5-beta.20260228212909"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/HittyPing/releases/download/beta/hp-darwin-arm64"
-      sha256 "9e54ddf1e6e68ffdf5049db402f7bf4d2460c04b9ade24a0e236bf84b15b94eb"
+      sha256 "7c81844738100f0c2e46f019f4a4de6943c6a14b2a98cae8265118fb0c9bbde4"
     else
       url "https://github.com/colangelo/HittyPing/releases/download/beta/hp-darwin-amd64"
-      sha256 "33f21eda0635bd072a7dc8060dad11353001cbf6e463d886c22bc1c72fa114ca"
+      sha256 "463629d41d6b3a27be4e86c520e35e532b1bef3dcb4e5aabb6221f7f3c6bc1ae"
     end
   end
 
