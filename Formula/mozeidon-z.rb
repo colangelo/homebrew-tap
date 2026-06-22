@@ -1,28 +1,28 @@
 class MozeidonZ < Formula
   desc "Control Firefox/Chrome from the terminal — Mozeidon-Z CLI"
   homepage "https://github.com/colangelo/mozeidon-z"
-  version "5.0.2"
+  version "5.0.3"
   license "MIT"
 
-  depends_on "egovelox/mozeidon/mozeidon-native-app"
+  depends_on "colangelo/mozeidon-z-messaging"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/mozeidon-z/releases/download/v#{version}/mozeidon-z-darwin-arm64"
-      sha256 "658708b72533a54bed1cb3772649440a2786f2ee0f2b147e91d485c637fe4cd3"
+      sha256 "dc60b1ab2eb7b49c147b1220816a629c0689138e0cb0ed70a3251c0272a750d6"
     else
       url "https://github.com/colangelo/mozeidon-z/releases/download/v#{version}/mozeidon-z-darwin-amd64"
-      sha256 "90fbf962f52d1914d05736a4947801c000b9f4965a2d030ebe2e026601e8d657"
+      sha256 "dd95a35d0928817bd6cafd1ce8caa45655c8cb4351a9bef77b3f8c403ef63767"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/mozeidon-z/releases/download/v#{version}/mozeidon-z-linux-arm64"
-      sha256 "df4a0df147eaf54fe87585c2cb8237adfa981b579e5984618bb1a8c3412c33ce"
+      sha256 "ade058441b277e9abcbbc66e0cd64227694d16c667091c7a27eff23b3de140df"
     else
       url "https://github.com/colangelo/mozeidon-z/releases/download/v#{version}/mozeidon-z-linux-amd64"
-      sha256 "08fc0a7a7db97f31985348ab43714157cd8aca8c6265c943ae4092ba07f4dd33"
+      sha256 "80f60a8f7d4f65a5e024e1542d019959dae8a975b79eaad6d7f2f1a45d7d244b"
     end
   end
 
