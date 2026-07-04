@@ -1,26 +1,26 @@
 class Herdr < Formula
   desc "Terminal workspace manager for AI coding agents"
   homepage "https://github.com/colangelo/herdr"
-  version "0.5.10"
+  version "0.7.1-ac"
   license "AGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/herdr/releases/download/v#{version}/herdr-macos-aarch64"
-      sha256 "ae88b83e56d689ed8188873f77075f17b1ef734e7f92abb1bdd07ad4a58c3bb3"
+      sha256 "7e801b6668c132c45b2aa97d44e071c62396fee4175408489bfd38dbf800da51"
     else
       url "https://github.com/colangelo/herdr/releases/download/v#{version}/herdr-macos-x86_64"
-      sha256 "9acee9f2530ecabc091cb4ddc22796032ba1f48bbd78f6495f3b821b594eec7d"
+      sha256 "9fdc1b941abc22581d326657e1089d8ee37874c8523606b1c75cae0351790b44"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/herdr/releases/download/v#{version}/herdr-linux-aarch64"
-      sha256 "e2ad49afa6540b81128ea25c2d8ce81f54b88e3e8d69e792efbd2aa00abf851d"
+      sha256 "e23d7b974927d2935ec3e37bd367367320f7ea2a10185df1409c4baf785e2150"
     else
       url "https://github.com/colangelo/herdr/releases/download/v#{version}/herdr-linux-x86_64"
-      sha256 "87eff9ae3fbdf752165d618fcf42b8c6f776031a5abcfe2f049cf47259dad6e8"
+      sha256 "450bc69a53ebec506d7289305d9ce46dd4c1a19bbd89f9a9251ee0e538271c8c"
     end
   end
 
