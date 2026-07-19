@@ -1,16 +1,16 @@
 class HerdrBeta < Formula
   desc "Terminal workspace manager for AI coding agents (beta channel)"
   homepage "https://github.com/colangelo/herdr"
-  version "0.7.4-ac-beta.20260719085058"
+  version "0.7.4-ac-beta.20260719093306"
   license "AGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/herdr/releases/download/beta/herdr-macos-aarch64"
-      sha256 "b4767ec5588ac33e2efff2d812490a447bdd58eb8a8c774bfa6cb1bc3e06d5cd"
+      sha256 "d0fa33fdf25f51f260515a4c99c0ea8283ca6c7bafc2891f15ee9287fce33acf"
     else
       url "https://github.com/colangelo/herdr/releases/download/beta/herdr-macos-x86_64"
-      sha256 "f9dfe701ae81ab918a18cce76f144fe1d09d45b8b084aa4df389f6da2799e1b1"
+      sha256 "7d5bfd880b8a65b726f7b79463711fdce4ac28b5918b682a47e427351e688ec5"
     end
   end
 
