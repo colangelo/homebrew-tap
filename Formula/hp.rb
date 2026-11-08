@@ -1,26 +1,26 @@
 class Hp < Formula
   desc "Prettyping-style HTTP(S) latency monitor"
   homepage "https://github.com/colangelo/HittyPing"
-  version "0.8.6"
+  version "0.8.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/HittyPing/releases/download/v#{version}/hp-darwin-arm64"
-      sha256 "75ed6197c7fac628c114f35961c2c3041f89453760a9454828c315b9501a228c"
+      sha256 "a017a5c3628cfa6c186df07f9544adcd1dadc424a87ffd7cefc30e7b8ffb3884"
     else
       url "https://github.com/colangelo/HittyPing/releases/download/v#{version}/hp-darwin-amd64"
-      sha256 "4f95a505ddd14a6aef2c4be8c3a1772f71958001b28b2344934841ad747e4073"
+      sha256 "7154a3f496e58695385ccff69bbd4e7659efdcab988a35d245a872fe0a2cbc3f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/colangelo/HittyPing/releases/download/v#{version}/hp-linux-arm64"
-      sha256 "cfaf004840fb2c0b443f60268684b9c8acd15ef55df3ada775e35106282b5e49"
+      sha256 "048a3c9d48a52f6417187b81018a6daa05163455f906eb9d612071237693eb26"
     else
       url "https://github.com/colangelo/HittyPing/releases/download/v#{version}/hp-linux-amd64"
-      sha256 "32e1598bdbd18ad3258ffb9c076147d8795504b95bce606de8701c75b099861d"
+      sha256 "29485505ca9549f02e8c8de1ad06a9d619b68714813992b359636aef80154a2b"
     end
   end
 
