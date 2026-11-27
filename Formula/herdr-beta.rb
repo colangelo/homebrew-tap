@@ -1,14 +1,14 @@
 class HerdrBeta < Formula
   desc "The old herdr-beta command, now a link to herdr-max"
   homepage "https://github.com/colangelo/herdr-max"
-  version "0.11.0"
+  version "0.12.0"
   license "AGPL-3.0-or-later"
 
   depends_on arch: :arm64
 
   on_macos do
     url "https://github.com/colangelo/herdr-max/releases/download/beta/herdr-macos-aarch64"
-    sha256 "43c340de2cb5bedb30dd05c2548e8c35f5e5ab0e0507972a45da0bd945c65dad"
+    sha256 "273c3304999f44d7da0df068bcfa3dcb62c8fca0eae62c8fb6a028e6378380ff"
   end
 
   depends_on "herdr-max"
